@@ -1,3 +1,429 @@
+-- sandworlds
+local sandworlds = {
+                   	  ["disabled"] = {
+                   		["totems"] = "0",
+                   		["pixelperfect"] = "0",
+                   		["unlock"] = "0",
+                   		["addoncompat"] = "0",
+                   		["feigndeath"] = "0",
+                   		["chatcopy"] = "0",
+                   		["map"] = "0",
+                   		["tooltip"] = "0",
+                   		["hdgraphic"] = "0",
+                   		["player"] = "0",
+                   		["updatenotify"] = "0",
+                   		["hunterbar"] = "0",
+                   		["targettargettarget"] = "0",
+                   		["socialmod"] = "0",
+                   		["bags"] = "0",
+                   		["chat"] = "0",
+                   		["autoshift"] = "0",
+                   		["focus"] = "0",
+                   		["thirdparty-vanilla"] = "0",
+                   		["raid"] = "0",
+                   		["targettarget"] = "0",
+                   		["sellvalue"] = "0",
+                   		["nameplates"] = "0",
+                   		["mirrortimers"] = "0",
+                   		["share"] = "0",
+                   		["buff"] = "0",
+                   		["bubbles"] = "0",
+                   		["easteregg"] = "0",
+                   		["uf_tukui"] = "0",
+                   		["skin"] = "0",
+                   		["infight"] = "0",
+                   		["xpbar"] = "0",
+                   		["questitem"] = "0",
+                   		["mouseover"] = "0",
+                   		["thirdparty"] = "0",
+                   		["whisperproxy"] = "0",
+                   		["mapcolors"] = "0",
+                   		["energytick"] = "0",
+                   		["EliteOverlay"] = "0",
+                   		["cooldown"] = "0",
+                   		["group"] = "0",
+                   		["farmmode"] = "0",
+                   		["loot"] = "0",
+                   		["addonbuttons"] = "0",
+                   		["mapreveal"] = "0",
+                   		["roll"] = "0",
+                   		["autovendor"] = "0",
+                   		["firstrun"] = "0",
+                   		["macrotweak"] = "0",
+                   		["unusable"] = "0",
+                   		["target"] = "0",
+                   		["eqcompare"] = "0",
+                   		["panel"] = "0",
+                   		["pet"] = "0",
+                   		["addons"] = "0",
+                   		["screenshot"] = "0",
+                   		["itemclick"] = "0",
+                   		["castbar"] = "0",
+                   		["pettarget"] = "0",
+                   		["hoverbind"] = "0",
+                   		["gm"] = "0",
+                   		["afkcam"] = "0",
+                   		["custom"] = "0",
+                   		["actionbar"] = "0",
+                   		["buffwatch"] = "0",
+                   		["minimap"] = "0",
+                   		["tracking"] = "0",
+                   		["combopoints"] = "0",
+                   	  },
+                   	  ["unitframes"] = {
+                   		["ptarget"] = {
+                   		  ["pspace"] = "-1",
+                   		  ["height"] = "8",
+                   		  ["width"] = "125",
+                   		  ["portrait"] = "off",
+                   		},
+                   		["ttarget"] = {
+                   		  ["pspace"] = "-1",
+                   		  ["pheight"] = "6",
+                   		  ["height"] = "16",
+                   		  ["portrait"] = "off",
+                   		  ["width"] = "125",
+                   		},
+                   		["target"] = {
+                   		  ["panchor"] = "TOPLEFT",
+                   		  ["pspace"] = "-1",
+                   		  ["pheight"] = "6",
+                   		  ["height"] = "35",
+                   		  ["buffsize"] = "14",
+                   		  ["width"] = "225",
+                   		},
+                   		["pet"] = {
+                   		  ["happinesssize"] = "18",
+                   		  ["pspace"] = "-1",
+                   		  ["pheight"] = "6",
+                   		  ["width"] = "125",
+                   		},
+                   		["player"] = {
+                   		  ["txthpleft"] = "powerdyn",
+                   		  ["defcolor"] = "0",
+                   		  ["panchor"] = "TOPRIGHT",
+                   		  ["pspace"] = "-1",
+                   		  ["custombg"] = "1",
+                   		  ["pheight"] = "6",
+                   		  ["buffsize"] = "14",
+                   		  ["customcolor"] = "0,1,0.1,0",
+                   		  ["height"] = "35",
+                   		  ["showPVP"] = "1",
+                   		  ["custombgcolor"] = "0.8,0.1,0.1,1",
+                   		  ["width"] = "225",
+                   		  ["custom"] = "1",
+                   		},
+                   		["customcolor"] = "0.15,0.15,0.15,1",
+                   		["custombgcolor"] = "0.5,0.2,0.2,1",
+                   		["focus"] = {
+                   		  ["pheight"] = "6",
+                   		},
+                   		["tttarget"] = {
+                   		  ["pspace"] = "-1",
+                   		  ["pheight"] = "6",
+                   		  ["height"] = "16",
+                   		  ["width"] = "125",
+                   		  ["portrait"] = "off",
+                   		},
+                   		["raid"] = {
+                   		  ["width"] = "48",
+                   		  ["height"] = "24",
+                   		},
+                   		["custombg"] = "1",
+                   		["custom"] = "1",
+                   	  },
+                   	  ["loot"] = {
+                   		["mousecursor"] = "0",
+                   	  },
+                   	  ["buffbar"] = {
+                   		["pdebuff"] = {
+                   		  ["enable"] = "1",
+                   		  ["height"] = "14",
+                   		},
+                   		["pbuff"] = {
+                   		  ["enable"] = "1",
+                   		  ["height"] = "14",
+                   		},
+                   		["tdebuff"] = {
+                   		  ["enable"] = "1",
+                   		  ["height"] = "14",
+                   		},
+                   	  },
+                   	  ["panel"] = {
+                   		["use_unitfonts"] = "1",
+                   		["xp"] = {
+                   		  ["xp_always"] = "1",
+                   		  ["rep_always"] = "1",
+                   		  ["xp_height"] = "182",
+                   		  ["xp_display"] = "XP",
+                   		},
+                   	  },
+                   	  ["addonskinner"] = {
+                   		["notifications"] = "0",
+                   	  },
+                   	  ["global"] = {
+                   		["font_combat"] = "Interface\\AddOns\\pfUI\\fonts\\Expressway.ttf",
+                   		["autosell"] = "1",
+                   		["font_unit_name"] = "Interface\\AddOns\\pfUI\\fonts\\Expressway.ttf",
+                   		["autorepair"] = "1",
+                   		["servertime"] = "1",
+                   		["profile"] = "Sandworlds",
+                   		["font_default"] = "Interface\\AddOns\\pfUI\\fonts\\Expressway.ttf",
+                   		["font_unit"] = "Interface\\AddOns\\pfUI\\fonts\\Continuum.ttf",
+                   		["font_size"] = "14",
+                   	  },
+                   	  ["chat"] = {
+                   		["global"] = {
+                   		  ["custombg"] = "1",
+                   		  ["tabmouse"] = "1",
+                   		  ["border"] = "0,0,0,0",
+                   		  ["background"] = "0,0,0,0.3",
+                   		},
+                   		["right"] = {
+                   		  ["enable"] = "1",
+                   		  ["width"] = "370",
+                   		},
+                   		["left"] = {
+                   		  ["width"] = "370",
+                   		},
+                   		["text"] = {
+                   		  ["channelnumonly"] = "0",
+                   		},
+                   	  },
+                   	  ["tooltip"] = {
+                   		["vendor"] = {
+                   		  ["showalways"] = "1",
+                   		},
+                   		["compare"] = {
+                   		  ["showalways"] = "1",
+                   		},
+                   		["position"] = "free",
+                   		["cursoralign"] = "right",
+                   	  },
+                   	  ["abuttons"] = {
+                   		["position"] = "left",
+                   		["enable"] = "1",
+                   	  },
+                   	  ["appearance"] = {
+                   		["infight"] = {
+                   		  ["common"] = "1",
+                   		},
+                   		["worldmap"] = {
+                   		  ["mapreveal"] = "1",
+                   		},
+                   		["bags"] = {
+                   		  ["hidechat"] = "1",
+                   		  ["movable"] = "1",
+                   		},
+                   		["border"] = {
+                   		  ["color"] = "0,0,0,1",
+                   		  ["bags"] = "3",
+                   		  ["panels"] = "1",
+                   		  ["unitframes"] = "1",
+                   		  ["default"] = "1",
+                   		  ["background"] = "0.1,0.1,0.1,0.8",
+                   		  ["actionbars"] = "1",
+                   		  ["chat"] = "2",
+                   		},
+                   	  },
+                   	  ["version"] = "5.3.0",
+                   	  ["position"] = {
+                   		["TicketStatusFrame"] = {
+                   		  ["xpos"] = -15,
+                   		  ["parent"] = "UIParent",
+                   		  ["ypos"] = 0,
+                   		  ["anchor"] = "TOP",
+                   		},
+                   		["pfLootRollFrame1"] = {
+                   		  ["xpos"] = -38,
+                   		  ["anchor"] = "RIGHT",
+                   		  ["ypos"] = -31,
+                   		  ["parent"] = "UIParent",
+                   		},
+                   		["pfBank"] = {
+                   		  ["xpos"] = 876,
+                   		  ["parent"] = "UIParent",
+                   		  ["ypos"] = -192,
+                   		  ["anchor"] = "TOPLEFT",
+                   		},
+                   		["MirrorTimer2"] = {
+                   		  ["xpos"] = 2,
+                   		  ["parent"] = "UIParent",
+                   		  ["ypos"] = -167,
+                   		  ["anchor"] = "TOP",
+                   		},
+                   		["pfLootRollFrame3"] = {
+                   		  ["xpos"] = -38,
+                   		  ["anchor"] = "RIGHT",
+                   		  ["ypos"] = -95,
+                   		  ["parent"] = "UIParent",
+                   		},
+                   		["pfLootRollFrame4"] = {
+                   		  ["xpos"] = -38,
+                   		  ["anchor"] = "RIGHT",
+                   		  ["ypos"] = -126,
+                   		  ["parent"] = "UIParent",
+                   		},
+                   		["pfPlayer"] = {
+                   		  ["xpos"] = -185,
+                   		  ["anchor"] = "BOTTOM",
+                   		  ["ypos"] = 138,
+                   		  ["parent"] = "UIParent",
+                   		},
+                   		["pfBag"] = {
+                   		  ["xpos"] = 992,
+                   		  ["parent"] = "UIParent",
+                   		  ["ypos"] = -620,
+                   		  ["anchor"] = "TOPLEFT",
+                   		},
+                   		["pfLootRollFrame2"] = {
+                   		  ["xpos"] = -39,
+                   		  ["anchor"] = "RIGHT",
+                   		  ["ypos"] = -63,
+                   		  ["parent"] = "UIParent",
+                   		},
+                   		["pfUITimer"] = {
+                   		  ["xpos"] = 0,
+                   		  ["parent"] = "UIParent",
+                   		  ["ypos"] = -145,
+                   		  ["anchor"] = "TOP",
+                   		},
+                   		["pfLootFrame"] = {
+                   		  ["xpos"] = -239,
+                   		  ["anchor"] = "RIGHT",
+                   		  ["ypos"] = 7,
+                   		  ["parent"] = "UIParent",
+                   		},
+                   		["pfDebuffFrame"] = {
+                   		  ["xpos"] = -161,
+                   		  ["parent"] = "UIParent",
+                   		  ["ypos"] = -115,
+                   		  ["anchor"] = "TOPRIGHT",
+                   		},
+                   		["WorldMapFrame"] = {
+                   		  ["xpos"] = 708,
+                   		  ["scale"] = 0.69999998807907,
+                   		  ["ypos"] = -84,
+                   		  ["alpha"] = 1,
+                   		  ["anchor"] = "TOPLEFT",
+                   		},
+                   		["pfTooltipAnchor"] = {
+                   		  ["xpos"] = -177,
+                   		  ["parent"] = "UIParent",
+                   		  ["ypos"] = -172,
+                   		  ["anchor"] = "TOPRIGHT",
+                   		},
+                   		["MirrorTimer3"] = {
+                   		  ["xpos"] = 1,
+                   		  ["parent"] = "UIParent",
+                   		  ["ypos"] = -191,
+                   		  ["anchor"] = "TOP",
+                   		},
+                   		["pfChatRight"] = {
+                   		  ["xpos"] = 0,
+                   		  ["anchor"] = "BOTTOMRIGHT",
+                   		  ["ypos"] = 0,
+                   		  ["parent"] = "UIParent",
+                   		},
+                   		["MirrorTimer1"] = {
+                   		  ["xpos"] = 1,
+                   		  ["parent"] = "UIParent",
+                   		  ["ypos"] = -141,
+                   		  ["anchor"] = "TOP",
+                   		},
+                   		["pfPlayerDebuffBar"] = {
+                   		  ["xpos"] = -185,
+                   		  ["anchor"] = "BOTTOM",
+                   		  ["ypos"] = 183,
+                   		  ["parent"] = "UIParent",
+                   		},
+                   		["pfChatLeft"] = {
+                   		  ["xpos"] = 0,
+                   		  ["anchor"] = "BOTTOMLEFT",
+                   		  ["ypos"] = 0,
+                   		  ["parent"] = "UIParent",
+                   		},
+                   		["pfTarget"] = {
+                   		  ["xpos"] = 185,
+                   		  ["anchor"] = "BOTTOM",
+                   		  ["ypos"] = 138,
+                   		  ["parent"] = "UIParent",
+                   		},
+                   	  },
+                   	  ["nameplates"] = {
+                   		["debuffs"] = {
+                   		  ["showstacks"] = "1",
+                   		},
+                   		["cpdisplay"] = "1",
+                   		["use_unitfonts"] = "1",
+                   		["outfriendly"] = "1",
+                   		["highlightcolor"] = "1,0.3,0.8,1",
+                   		["targethighlight"] = "1",
+                   	  },
+                   	  ["bars"] = {
+                   		["bar9"] = {
+                   		  ["icon_size"] = "22",
+                   		  ["background"] = "0",
+                   		},
+                   		["bar11"] = {
+                   		  ["icon_size"] = "22",
+                   		  ["background"] = "0",
+                   		},
+                   		["font"] = "Interface\\AddOns\\pfUI\\fonts\\Expressway.ttf",
+                   		["bar7"] = {
+                   		  ["icon_size"] = "22",
+                   		  ["background"] = "0",
+                   		},
+                   		["bar12"] = {
+                   		  ["icon_size"] = "23",
+                   		  ["background"] = "0",
+                   		  ["showkeybind"] = "0",
+                   		},
+                   		["bind_color"] = "1,1,0.6,1",
+                   		["bar10"] = {
+                   		  ["icon_size"] = "22",
+                   		  ["background"] = "0",
+                   		},
+                   		["bar4"] = {
+                   		  ["icon_size"] = "22",
+                   		  ["background"] = "0",
+                   		},
+                   		["bar6"] = {
+                   		  ["icon_size"] = "32",
+                   		  ["background"] = "0",
+                   		},
+                   		["bar2"] = {
+                   		  ["icon_size"] = "22",
+                   		  ["background"] = "0",
+                   		},
+                   		["bar3"] = {
+                   		  ["showmacro"] = "0",
+                   		  ["formfactor"] = "3 x 4",
+                   		  ["icon_size"] = "22",
+                   		  ["showempty"] = "0",
+                   		  ["background"] = "0",
+                   		  ["showkeybind"] = "0",
+                   		},
+                   		["bar5"] = {
+                   		  ["icon_size"] = "22",
+                   		  ["background"] = "0",
+                   		  ["formfactor"] = "3 x 4",
+                   		},
+                   		["bar8"] = {
+                   		  ["icon_size"] = "22",
+                   		  ["background"] = "0",
+                   		},
+                   		["bar1"] = {
+                   		  ["icon_size"] = "32",
+                   		  ["background"] = "0",
+                   		},
+                   		["bind_size"] = "20",
+                   	  },
+                   	  ["EliteOverlay"] = {
+                   		["position"] = "right",
+                   	  },
+                   	}
+
 -- Modern
 local modern = {
   ["chat"] = {
@@ -902,6 +1328,9 @@ local adapta = {
   },
 }
 
+-- Sandworlds
+pfUI_profiles["Sandworlds"] = sandworlds
+
 -- assign profiles to userdata
 pfUI_profiles["Modern"] = modern
 pfUI_profiles["Nostalgia"] = nostalgia
@@ -914,6 +1343,7 @@ pfUI_profiles["Slim"] = slim
 local profile_loader = CreateFrame("Frame")
 profile_loader:RegisterEvent("VARIABLES_LOADED")
 profile_loader:SetScript("OnEvent", function()
+  pfUI_profiles["Sandworlds"] = sandworlds
   pfUI_profiles["Modern"] = modern
   pfUI_profiles["Nostalgia"] = nostalgia
   pfUI_profiles["Legacy"] = legacy
