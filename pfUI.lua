@@ -300,9 +300,9 @@ pfUI:SetScript("OnEvent", function()
     pfUI.version.fix   = tonumber(fix)   or 0
     pfUI.version.string = pfUI.version.major .. "." .. pfUI.version.minor .. "." .. pfUI.version.fix
 
-    -- use "Modern" as default profile on a fresh install
+    -- use "Sandworlds" as default profile on a fresh install
     if pfUI.api.isempty(pfUI_init) and pfUI.api.isempty(pfUI_config) then
-      pfUI_config = pfUI.api.CopyTable(pfUI_profiles["Modern"]) or {}
+      pfUI_config = pfUI.api.CopyTable(pfUI_profiles["Sandworlds"]) or {}
     end
 
     pfUI:LoadConfig()
