@@ -300,9 +300,18 @@ pfUI:SetScript("OnEvent", function()
     pfUI.version.fix   = tonumber(fix)   or 0
     pfUI.version.string = pfUI.version.major .. "." .. pfUI.version.minor .. "." .. pfUI.version.fix
 
-    -- use "Modern" as default profile on a fresh install
+    -- use "Sandworlds" as default profile on a fresh install
     if pfUI.api.isempty(pfUI_init) and pfUI.api.isempty(pfUI_config) then
-      pfUI_config = pfUI.api.CopyTable(pfUI_profiles["Modern"]) or {}
+      pfUI_config = pfUI.api.CopyTable(pfUI_profiles["Sandworlds"]) or {}
+
+      -- First run: enforce UI scale to 87%
+      -- Why: provide a consistent default look without relying on user input.
+      -- How: set the game CVars and apply to UIParent immediately.
+      -- Note: This only runs on a fresh install due to the condition above.
+      local desiredScale = 0.87
+      SetCVar("uiScale", desiredScale)
+      SetCVar("useUiScale", 1)
+      UIParent:SetScale(desiredScale)
     end
 
     pfUI:LoadConfig()
