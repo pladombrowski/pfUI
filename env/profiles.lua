@@ -5,11 +5,11 @@ local sandworlds = {
     },
     ["chat"] = {
         ["global"] = {
-            ["custombg"] = "1",
             ["tabmouse"] = "1",
             ["border"] = "0,0,0,0",
             ["frameshadow"] = "0",
             ["background"] = "0,0,0,0.2",
+            ["custombg"] = "1",
         },
         ["right"] = {
             ["enable"] = "1",
@@ -31,6 +31,9 @@ local sandworlds = {
             ["xp_mode"] = "HORIZONTAL",
             ["xp_position"] = "BOTTOM",
         },
+        ["micro"] = {
+            ["enable"] = "1",
+        },
     },
     ["bars"] = {
         ["bar1"] = {
@@ -44,10 +47,6 @@ local sandworlds = {
         },
         ["count_size"] = "8",
         ["bind_size"] = "10",
-        ["bar4"] = {
-            ["autohide"] = "1",
-            ["background"] = "0",
-        },
         ["bar11"] = {
             ["icon_size"] = "20",
             ["background"] = "0",
@@ -72,6 +71,10 @@ local sandworlds = {
             ["texture"] = "Gryphon",
             ["size"] = "80",
         },
+        ["bar4"] = {
+            ["autohide"] = "1",
+            ["background"] = "0",
+        },
     },
     ["buffbar"] = {
         ["pdebuff"] = {
@@ -89,15 +92,28 @@ local sandworlds = {
     ["addonskinner"] = {
         ["notifications"] = "0",
     },
+    ["appearance"] = {
+        ["cd"] = {
+            ["font"] = "Fonts\\ARIALN.TTF",
+        },
+        ["castbar"] = {
+            ["texture"] = "Interface\\AddOns\\pfUI\\img\\bar_gradient",
+        },
+        ["border"] = {
+            ["force_blizz"] = "1",
+            ["color"] = "0.7,0.7,0.7,1",
+            ["background"] = "0.1,0.1,0.1,0.7",
+        },
+    },
     ["global"] = {
-        ["font_unit_size"] = "13",
-        ["autosell"] = "1",
+        ["font_combat"] = "Fonts\\FRIZQT__.TTF",
+        ["font_unit"] = "Interface\\AddOns\\pfUI\\fonts\\Myriad-Pro.ttf",
         ["font_unit_name"] = "Fonts\\FRIZQT__.TTF",
         ["autorepair"] = "1",
         ["profile"] = "Sandworlds Legacy",
         ["font_blizzard"] = "1",
-        ["font_unit"] = "Interface\\AddOns\\pfUI\\fonts\\Myriad-Pro.ttf",
-        ["font_combat"] = "Fonts\\FRIZQT__.TTF",
+        ["autosell"] = "1",
+        ["font_unit_size"] = "13",
     },
     ["tooltip"] = {
         ["position"] = "cursor",
@@ -234,15 +250,15 @@ local sandworlds = {
     ["version"] = "5.5.4",
     ["position"] = {
         ["pfActionBarRight"] = {
-            ["xpos"] = -365,
+            ["xpos"] = -364,
             ["anchor"] = "BOTTOMRIGHT",
             ["ypos"] = 1,
             ["parent"] = "UIParent",
         },
-        ["pfActionBarLeft"] = {
-            ["xpos"] = 365,
-            ["anchor"] = "BOTTOMLEFT",
-            ["ypos"] = 1,
+        ["pfDurability"] = {
+            ["xpos"] = 393,
+            ["anchor"] = "TOPLEFT",
+            ["ypos"] = -61,
             ["parent"] = "UIParent",
         },
         ["pfLootRollFrame1"] = {
@@ -259,10 +275,16 @@ local sandworlds = {
             ["anchor"] = "CENTER",
         },
         ["pfTooltipAnchor"] = {
-            ["xpos"] = 171,
+            ["xpos"] = -166,
             ["parent"] = "UIParent",
-            ["ypos"] = -173,
-            ["anchor"] = "TOP",
+            ["ypos"] = 97,
+            ["anchor"] = "RIGHT",
+        },
+        ["pfActionBarLeft"] = {
+            ["xpos"] = 364,
+            ["anchor"] = "BOTTOMLEFT",
+            ["ypos"] = 1,
+            ["parent"] = "UIParent",
         },
         ["pfLootRollFrame3"] = {
             ["xpos"] = -165,
@@ -280,6 +302,18 @@ local sandworlds = {
             ["xpos"] = -1,
             ["anchor"] = "BOTTOMRIGHT",
             ["ypos"] = 1,
+            ["parent"] = "UIParent",
+        },
+        ["QuestTimerFrame"] = {
+            ["xpos"] = 0,
+            ["anchor"] = "TOPRIGHT",
+            ["ypos"] = -210,
+            ["parent"] = "UIParent",
+        },
+        ["TicketStatusFrame"] = {
+            ["xpos"] = 334,
+            ["anchor"] = "TOPLEFT",
+            ["ypos"] = -1,
             ["parent"] = "UIParent",
         },
         ["pfChatLeft"] = {
