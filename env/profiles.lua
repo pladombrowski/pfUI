@@ -116,7 +116,7 @@ local sandworlds = {
         ["font_unit_size"] = "13",
     },
     ["tooltip"] = {
-        ["position"] = "cursor",
+        ["position"] = "dodge",
     },
     ["appearance"] = {
         ["cd"] = {
