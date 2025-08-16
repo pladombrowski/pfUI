@@ -25,7 +25,6 @@ local sandworlds = {
             ["xp_display"] = "XP",
             ["rep_display"] = "FLEX",
             ["xp_anchor"] = "pfActionBarMain",
-            ["rep_always"] = "1",
             ["texture"] = "Interface\\AddOns\\pfUI\\img\\bar_gradient",
             ["rep_width"] = "4",
             ["xp_mode"] = "HORIZONTAL",
